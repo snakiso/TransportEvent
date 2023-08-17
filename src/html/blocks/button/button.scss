@@ -1,0 +1,40 @@
+.button {
+  display: block;
+  color: white;
+  font-family: RFDewi;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+  padding: 28px 40px;
+  border-radius: 59px;
+  border: 2px solid rgba(255, 255, 255, 0.20);
+  background: rgba(255, 255, 255, 0.01);
+
+  &_white {
+    background-color: white;
+    color: black;
+  }
+
+  @include desktop {
+    padding: 28px 40px;
+    font-size: 13px;
+  }
+
+  @include small-desktop {
+    padding: 28px 40px;
+    font-size: 13px;
+  }
+
+  @include tablet {
+    padding: 20px 30px;
+    font-size: 13px;
+  }
+
+  @include mobile {
+    padding: 18px 25px;
+    font-size: 12px;
+  }
+}

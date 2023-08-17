@@ -1,0 +1,134 @@
+.footer {
+  background: #202020;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 318px;
+  }
+
+  &__text {
+    display: block;
+    color: $color-main;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+    opacity: 0.7;
+  }
+
+  &__rules-link {
+    color: #1C8CFB;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    max-width: 220px;
+  }
+
+  &__right-block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__download-block {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  &__download {
+    background-color: $color-main;
+    display: flex;
+    border-radius: 16px;
+
+    img {
+      padding: 10px;
+    }
+  }
+
+  &__social {
+    max-width: 200px;
+  }
+
+  &__social-block {
+    margin-top: 15px;
+    display: flex;
+    column-gap: 7px;
+  }
+
+  @include desktop {
+
+    &__wrapper {
+      padding-top: 70px;
+      padding-bottom: 100px;
+    }
+
+    &__right-block {
+      max-width: 920px;
+      width: 100%;
+    }
+  }
+
+  @include small-desktop {
+
+    &__wrapper {
+      padding-top: 70px;
+      padding-bottom: 100px;
+    }
+
+    &__right-block {
+      max-width: 750px;
+      width: 100%;
+    }
+  }
+
+  @include tablet {
+
+    &__wrapper {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    &__right-block {
+      flex-direction: column-reverse;
+      row-gap: 25px;
+    }
+
+    &__download {
+      img {
+        max-width: 160px;
+      }
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    &__right-block {
+      flex-direction: column;
+      row-gap: 25px;
+    }
+
+    &__download {
+      img {
+        max-width: 160px;
+      }
+    }
+  }
+}

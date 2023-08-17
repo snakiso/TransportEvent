@@ -1,0 +1,49 @@
+@import '../scss/breakpoints';
+@import '../scss/fonts';
+@import '../scss/vars';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: RFDewi;
+  font-weight: 600;
+  color: $color-main;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+
+
+}
+
+
+
+
+@import '../scss/layout';
+@import '../scss/wrapper';
+@import '../scss/animation';
+@import "../html/common/menu/menu";
+@import "../html/common/header/header";
+@import "../html/common/footer/footer";
+@import '../html/blocks/hamburgers/hamburgers';
+@import '../html/blocks/hero/hero';
+@import '../html/blocks/title/title';
+@import '../html/blocks/button/button';
