@@ -1,0 +1,79 @@
+.main-event {
+  &__title {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &__help {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__numbers {
+    display: block;
+  }
+
+  @include desktop {
+    &__title {
+      margin-top: 160px;
+      margin-bottom: 40px;
+      font-size: 102px;
+      line-height: 100%;
+      letter-spacing: -4.08px;
+    }
+
+    &__numbers {
+      margin: 200px auto;
+    }
+  }
+
+  @include small-desktop {
+    &__title {
+      margin-top: 160px;
+      margin-bottom: 40px;
+      font-size: 102px;
+      line-height: 100%;
+      letter-spacing: -4.08px;
+    }
+
+    &__numbers {
+      margin: 200px auto;
+    }
+  }
+
+  @include tablet {
+    &__title {
+      margin-top: 110px;
+      margin-bottom: 40px;
+      font-size: 54px;
+      line-height: 100%;
+      letter-spacing: -2.16px;
+    }
+
+    &__help {
+      max-width: 430px;
+    }
+
+    &__numbers {
+      margin: 130px auto;
+    }
+  }
+
+  @include mobile {
+    &__title {
+      margin-top: 65px;
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: -1.2px;
+    }
+
+    &__help {
+      max-width: 330px;
+    }
+
+    &__numbers {
+      margin: 65px auto 110px auto;
+    }
+  }
+}

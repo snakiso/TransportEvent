@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   align-items: flex-end;
-
+  background-repeat: no-repeat;
 
   &_main {
     background: linear-gradient(2deg, #040720 0%, rgba(4, 7, 32, 0.00) 100%), linear-gradient(180deg, rgba(6, 9, 39, 0.89) 0%, rgba(1, 2, 9, 0.19) 68.23%, rgba(30, 191, 241, 0.00) 100%), url(../img/hero/main-page.png), lightgray -143.25px 0px / 119.896% 117.569% no-repeat;
@@ -10,6 +10,18 @@
 
   &_exhibition {
     background: linear-gradient(2deg, #040720 0%, rgba(4, 7, 32, 0.00) 100%), linear-gradient(180deg, rgba(6, 9, 39, 0.89) 0%, rgba(1, 2, 9, 0.19) 68.23%, rgba(30, 191, 241, 0.00) 100%), url(../img/hero/hero-exhibition.jpg), lightgray -143.25px 0px / 119.896% 117.569% no-repeat;
+  }
+
+  &_transport {
+    background: linear-gradient(2deg, #040720 0%, rgba(4, 7, 32, 0.00) 100%), linear-gradient(180deg, rgba(6, 9, 39, 0.89) 0%, rgba(1, 2, 9, 0.19) 68.23%, rgba(30, 191, 241, 0.00) 100%), url(../img/hero/hero-transport-week.png), lightgray -143.25px 0px / 119.896% 117.569% no-repeat;
+  }
+
+  &_dvor {
+    background: linear-gradient(2deg, #040720 0%, rgba(4, 7, 32, 0.00) 100%), linear-gradient(180deg, rgba(6, 9, 39, 0.89) 0%, rgba(1, 2, 9, 0.19) 68.23%, rgba(30, 191, 241, 0.00) 100%), url(../img/hero/hero-dvor.png), lightgray -143.25px 0px / 119.896% 117.569% no-repeat;
+  }
+
+  &_forum {
+    background: linear-gradient(2deg, #040720 0%, rgba(4, 7, 32, 0.00) 100%), linear-gradient(180deg, rgba(6, 9, 39, 0.89) 0%, rgba(1, 2, 9, 0.19) 68.23%, rgba(30, 191, 241, 0.00) 100%), url(../img/hero/hero-forum.jpg), lightgray -143.25px 0px / 119.896% 117.569% no-repeat;
   }
 
   &__content {
@@ -62,7 +74,6 @@
   &__text {
     font-weight: 600;
     line-height: 140%;
-    max-width: 600px;
   }
 
   &__scroll {
@@ -77,7 +88,7 @@
     }
 
     &__title {
-      max-width: 750px;
+      width: fit-content;
     }
 
     &__info {
@@ -100,6 +111,10 @@
       font-size: 22px;
       letter-spacing: -0.44px;
       max-width: 600px;
+
+      &_forum {
+        max-width: 100%;
+      }
     }
   }
 

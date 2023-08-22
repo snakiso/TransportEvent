@@ -7,7 +7,7 @@
   }
 
   &__left-block {
-    display: flex;
+    display: grid;
     flex-direction: column;
     row-gap: 20px;
     max-width: 318px;
@@ -38,7 +38,8 @@
   }
 
   &__download-block {
-    display: flex;
+    display: grid;
+    grid-template-columns: (repeat(2, auto));
     column-gap: 10px;
     margin-top: 15px;
     margin-bottom: 25px;
@@ -59,9 +60,16 @@
   }
 
   &__social-block {
+    width: fit-content;
     margin-top: 15px;
-    display: flex;
+    display: grid;
+    grid-template-columns: (repeat(3, auto));
     column-gap: 7px;
+  }
+
+  &__social-link {
+    display: block;
+    width: fit-content;
   }
 
   @include desktop {
@@ -99,7 +107,10 @@
 
     &__right-block {
       flex-direction: column-reverse;
-      row-gap: 25px;
+    }
+
+    &__social {
+      margin-bottom: 25px;
     }
 
     &__download {
@@ -117,12 +128,15 @@
 
     &__wrapper {
       flex-direction: column;
-      row-gap: 25px;
     }
 
     &__right-block {
       flex-direction: column;
-      row-gap: 25px;
+      margin-top: 25px;
+    }
+
+    &__social {
+      margin-top: 25px;
     }
 
     &__download {

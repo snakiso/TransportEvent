@@ -30,8 +30,10 @@ a {
 .main {
   position: relative;
   overflow: hidden;
-
-
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -40,6 +42,7 @@ a {
 @import '../scss/layout';
 @import '../scss/wrapper';
 @import '../scss/animation';
+@import '../scss/offsets';
 @import "../html/common/menu/menu";
 @import "../html/common/header/header";
 @import "../html/common/footer/footer";
@@ -47,3 +50,13 @@ a {
 @import '../html/blocks/hero/hero';
 @import '../html/blocks/title/title';
 @import '../html/blocks/button/button';
+@import '../html/blocks/advantage/advantage';
+@import '../html//blocks/new-banner/news-banner';
+@import '../html//blocks/spotlight/spotlight';
+@import '../html//blocks/links-line/links-line';
+@import '../html//blocks/main-event/main-event';
+@import '../html//blocks/profile/profile';
+@import '../html//blocks/partners/partners';
+@import '../html//blocks/button-line/button-line';
+@import '../html//blocks/contact-cards/contact-cards';
+@import '../html//blocks/route/route';

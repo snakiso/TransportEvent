@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Гостиный Двор"
+})
+
+<body class="body">
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            @@include('html/blocks/hero/hero-forum.html',{})
+            @@include('html/blocks/advantage/advantage-forum.html',{})
+            @@include('html/blocks/contact-cards/contact-cards-2.html',{})
+            <div class="button-line">
+                <a href="" class="button">ПРОГРАММА</a>
+                <a href="" class="button">СПИКЕРЫ</a>
+                <a href="" class="button button_white">РЕГИСТРАЦИЯ</a>
+            </div>
+            <div class="links-line padding-bottom">
+                <a href="#" class="links-line__item links-line__item_white">ВЫСТАВКА</a>
+                <a href="#" class="links-line__item links-line__item_white">КАТАЛОГ ЭКСПОНЕНТОВ</a>
+                <a href="#" class="links-line__item links-line__item_white">СПИСОК УЧАСТНИКОВ</a>
+            </div>
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

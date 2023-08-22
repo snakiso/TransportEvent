@@ -1,0 +1,42 @@
+.links-line {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &_start {
+    justify-content: start;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 20px;
+    color: rgba(0, 116, 231, 1);
+    font-size: 13px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-image: url(../img/link-arrow-blue.svg);
+      right: 0;
+      top: 3px;
+    }
+
+    &_white {
+      color: white;
+
+      &::after {
+        background-image: url(../img/link-arrow.svg);
+      }
+    }
+  }
+}

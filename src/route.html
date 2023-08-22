@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Проложите маршрут"
+})
+
+<body class="body">
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            @@include('html/blocks/route/route.html',{})
+            <div class="links-line padding-bottom">
+                <a href="#" class="links-line__item links-line__item_white">Подробнее о Форуме</a>
+                <a href="#" class="links-line__item links-line__item_white">Подробнее о Выставке</a>
+                <a href="#" class="links-line__item links-line__item_white">Регистрация</a>
+                <a href="#" class="links-line__item links-line__item_white">Список участников</a>
+                <a href="#" class="links-line__item links-line__item_white">Размещение</a>
+            </div>
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+    <script src="./js/header.js"></script>
+    <script src="./js/main-event.js"></script>
+</body>
+
+</html>

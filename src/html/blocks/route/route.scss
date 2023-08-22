@@ -1,0 +1,298 @@
+.route {
+  &__wrapper {
+    margin: auto;
+    max-width: 1260px;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+  }
+
+  &__transport {
+    position: relative;
+    font-weight: 600;
+    padding-left: 75px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 52px;
+      height: 52px;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &_car::before {
+      background-image: url(../img/route/sedan.svg);
+    }
+
+    &_train::before {
+      background-image: url(../img/route/train.svg);
+    }
+  }
+
+  &__block {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__block-inner {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  &__block-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-weight: 400;
+  }
+
+  @include desktop {
+    &__wrapper {
+      padding: 200px 30px;
+    }
+
+    &__title {
+      font-size: 72px;
+      line-height: 120%;
+      letter-spacing: -2.16px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 140%;
+      letter-spacing: -0.44px;
+      margin-bottom: 40px;
+    }
+
+    &__map {
+      display: block;
+      width: 100%;
+      margin-bottom: 80px;
+    }
+
+    &__transport {
+      font-size: 52px;
+      line-height: 120%;
+      letter-spacing: -1.56px;
+    }
+
+    &__block {
+
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+    }
+
+    &__block-inner {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+    }
+
+    &__block-content {
+      max-width: 480px;
+    }
+
+    &__block-text {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include small-desktop {
+    &__wrapper {
+      padding: 200px 30px;
+    }
+
+    &__title {
+      font-size: 72px;
+      line-height: 120%;
+      letter-spacing: -2.16px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      font-size: 22px;
+      line-height: 140%;
+      letter-spacing: -0.44px;
+      margin-bottom: 40px;
+    }
+
+    &__map {
+      display: block;
+      width: 100%;
+      margin-bottom: 120px;
+    }
+
+    &__transport {
+      font-size: 52px;
+      line-height: 120%;
+      letter-spacing: -1.56px;
+    }
+
+    &__block {
+
+      &:not(:last-child) {
+        margin-bottom: 80px;
+      }
+    }
+
+    &__block-inner {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+    }
+
+    &__block-content {
+      max-width: 480px;
+    }
+
+    &__block-text {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include tablet {
+    &__wrapper {
+      padding: 180px 40px;
+    }
+
+    &__title {
+      font-size: 56px;
+      line-height: 120%;
+      letter-spacing: -1.68px;
+      margin-bottom: 20px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: -0.4px;
+      margin-bottom: 40px;
+    }
+
+    &__map {
+      display: block;
+      width: 100%;
+      margin-bottom: 80px;
+      aspect-ratio: 4/4;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+
+    &__transport {
+      font-size: 44px;
+      line-height: 120%;
+      letter-spacing: -1.32px;
+      margin-bottom: 25px;
+    }
+
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__block-inner {
+      display: flex;
+      flex-direction: column;
+      padding-top: 40px;
+    }
+
+    &__block-content {
+      max-width: 100%;
+    }
+
+    &__block-text {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.32px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include mobile {
+    &__wrapper {
+      padding: 160px 15px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 120%;
+      letter-spacing: -0.96px;
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+      margin-bottom: 25px;
+    }
+
+    &__map {
+      display: block;
+      width: 100%;
+      margin-bottom: 80px;
+      aspect-ratio: 4/5;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+
+    &__transport {
+      font-size: 28px;
+      line-height: 120%;
+      letter-spacing: -0.84px;
+      margin-bottom: 25px;
+    }
+
+    &__block {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__block-inner {
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+    }
+
+    &__block-content {
+      max-width: 100%;
+    }
+
+    &__block-text {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.32px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
