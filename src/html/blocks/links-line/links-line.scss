@@ -1,5 +1,8 @@
 .links-line {
+  $gap: 12px;
   display: flex;
+  margin-left: -$gap;
+  margin-right: -$gap;
   justify-content: center;
   flex-wrap: wrap;
 
@@ -8,18 +11,20 @@
   }
 
   &__item {
+    padding-right: $gap;
+    padding-left: $gap;
+
+  }
+
+  &__link {
     position: relative;
-    padding-right: 20px;
     color: rgba(0, 116, 231, 1);
     font-size: 13px;
     margin-bottom: 25px;
+    padding-right: 20px;
     font-weight: 600;
     letter-spacing: 0.65px;
     text-transform: uppercase;
-
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
 
     &::after {
       position: absolute;

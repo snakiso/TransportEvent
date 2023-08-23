@@ -17,14 +17,19 @@
   }
 
   &__item {
-    background-color: white;
-    border-radius: 20px;
     width: fit-content;
     display: inline-block;
   }
 
+  &__item-inner {
+    background-color: white;
+    border-radius: 20px;
+  }
+
 
   @include desktop {
+    $gap: 12px;
+
     &__wrapper {
       padding-top: 160px;
       padding-bottom: 160px;
@@ -41,9 +46,14 @@
     &__box {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
+      margin-left: -$gap;
+      margin-right: -$gap;
       max-width: 1240px;
       margin-bottom: 50px;
+    }
+
+    &__item {
+      padding: $gap;
     }
 
     &__item-inner {
@@ -52,6 +62,8 @@
   }
 
   @include small-desktop {
+    $gap: 12px;
+
     &__wrapper {
       padding-top: 160px;
       padding-bottom: 160px;
@@ -68,9 +80,12 @@
     &__box {
       display: flex;
       flex-wrap: wrap;
-      gap: 25px;
       max-width: 1240px;
       margin-bottom: 50px;
+    }
+
+    &__item {
+      padding: $gap;
     }
 
     &__item-inner {
@@ -79,6 +94,8 @@
   }
 
   @include tablet {
+    $gap: 6px;
+
     &__wrapper {
       padding-top: 110px;
       padding-bottom: 110px;
@@ -95,8 +112,11 @@
     &__box {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
       margin-bottom: 50px;
+    }
+
+    &__item {
+      padding: $gap;
     }
 
     &__item-inner {
@@ -104,13 +124,11 @@
       max-width: fit-content;
     }
 
-    &__item-img {
-      max-width: 50%;
-      display: block;
-    }
   }
 
   @include mobile {
+    $gap: 4px;
+
     &__wrapper {
       padding-top: 65px;
       padding-bottom: 65px;
@@ -127,18 +145,16 @@
     &__box {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
       margin-bottom: 30px;
+    }
+
+    &__item {
+      padding: $gap;
     }
 
     &__item-inner {
       padding: 20px;
       max-width: fit-content;
-    }
-
-    &__item-img {
-      max-width: 30%;
-      display: block;
     }
   }
 }

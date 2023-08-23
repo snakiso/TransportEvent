@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
 
   &_main {
-    background: linear-gradient(2deg, #040720 0%, rgba(4, 7, 32, 0.00) 100%), linear-gradient(180deg, rgba(6, 9, 39, 0.89) 0%, rgba(1, 2, 9, 0.19) 68.23%, rgba(30, 191, 241, 0.00) 100%), url(../img/hero/main-page.png), lightgray -143.25px 0px / 119.896% 117.569% no-repeat;
+    background: linear-gradient(0.62deg, #040720 1.83%, rgba(4, 7, 32, 0) 62.75%), linear-gradient(180deg, rgba(3, 5, 26, 0.89) 0%, rgba(1, 2, 9, 0.194688) 32.04%, rgba(1, 4, 19, 0) 36.73%), url(../img/hero/main-page.png);
   }
 
   &_exhibition {
@@ -35,7 +35,6 @@
 
   &__info-block {
     display: flex;
-    column-gap: 20px;
   }
 
   &__info {
@@ -56,6 +55,10 @@
 
     &_place::before {
       background-image: url(../img/hero/map-pin.svg);
+    }
+
+    &:not(:last-child) {
+      margin-right: 20px;
     }
   }
 
