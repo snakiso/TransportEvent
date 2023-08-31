@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="js/jQuery2.2.0.js?_v=20230831120717"></script>
+    <script src="js/ScrollAnimations.js?_v=20230831120717"></script>
+    <link rel="stylesheet" href="css/style.min.css?_v=20230831120717">
+    <title>Регистрация</title>
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+  <div class="header__left-block">
+    <a href="#" class="header__logo">
+      <img src="img/header/logo.svg" alt="">
+    </a>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#" class="header__link">Транспортная неделя</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">О проекте</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Место проведения</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Как добраться</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Размещение</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Форум</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">О форуме</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Программа</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Спикеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Выставка</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">О выставке</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">План выставки</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Каталог экспонентов</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Премия</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">О премии</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Жюри</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Критерии оценки</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Положение о премии</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Номинанты</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Лауреаты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Партнеры</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Деловые партнеры</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Информационные партнеры</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">СМИ</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Информация для СМИ</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Правила аккредитации</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Новости</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="header__item">
+          <a href="#" class="header__link">Итоги</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <ul class="header__dropdown-list">
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Статистика</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Фотобанк</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Видеоархив</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">Презентация</a>
+                </li>
+                <li class="header__dropdown-item">
+                  <a href="#" class="header__dropdown-link">СМИ о Транспортной неделе</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header__right-block">
+    <div class="header__language">
+      <span class="header__language-item active">RU</span>
+      <span class="header__language-item">EN</span>
+    </div>
+    <button class="hamburger hamburger--squeeze" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+</header>
+        <div class="menu">
+  <div class="menu__close"></div>
+  <div class="menu__main-block">
+    <div class="menu__inner-container">
+      <a href="#" class="menu__logo">
+        <img src="img/menu/logo.svg" alt="">
+      </a>
+      <nav class="menu__nav">
+        <span class="menu__nav-title">Транспортная
+          неделя</span>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О мероприятии</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Место проведения</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Как добраться</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Размещение</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="menu__container">
+    <div class="menu__block">
+      <div class="menu__inner-container">
+        <nav class="menu__nav">
+          <span class="menu__nav-title">Форум</span>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О форуме</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Программа</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Спикеры</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="menu__block">
+      <div class="menu__inner-container">
+        <nav class="menu__nav">
+          <span class="menu__nav-title">Выставка</span>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О выставке</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">План выставки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Каталог экспонентов</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="menu__block">
+      <div class="menu__inner-container">
+        <nav class="menu__nav">
+          <span class="menu__nav-title">Премия</span>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О премии</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Критерии оценки</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Положение о премии</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Жюри</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Номинанты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Лауреаты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="menu__block">
+      <div class="menu__inner-container">
+        <nav class="menu__nav">
+          <span class="menu__nav-title">СМИ</span>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Информация для СМИ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Правила аккредитации</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новости</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="menu__block">
+      <div class="menu__inner-container">
+        <nav class="menu__nav">
+          <span class="menu__nav-title">Партнеры</span>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Деловые партнеры</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Информационные партнеры</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="menu__block">
+      <div class="menu__inner-container">
+        <nav class="menu__nav">
+          <span class="menu__nav-title">Итоги</span>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Статистика</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Фотобанк</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Видеоархив</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Презентация</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">СМИ о Транспортной неделе</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+        <main class="main">
+            <section class="registration">
+    <div class="registration__wrapper">
+        <div class="registration__top">
+            <h2 class="registration__title title">Регистрация</h2>
+            <h4 class="registration__subtitle subtitle">Определите оптимальный для вас формат участия.
+                Заполните заявку. Получите подтверждение вашей регистрации с нашей стороны.</h4>
+        </div>
+        <div class="registration__list">
+            <div class="registration__card">
+                <div class="registration__card-inner">
+                    <span class="registration__card-title" data-color="#5C19CB">ВИП Участник</span>
+                    <span class="registration__card-theme">Форум и Выставка</span>
+                    <ul class="registration__card-list">
+                        <li class="registration__card-item">Без ограничений.</li>
+                        <li class="registration__card-item">Доступ в зале пленарных дискуссий.</li>
+                        <li class="registration__card-item">Индивидуальная рассадка в зале</li>
+                        <li class="registration__card-item">Доступ в зону «ВИП».</li>
+                        <li class="registration__card-item">Приглашение на вечерний приём</li>
+                    </ul>
+                    <div class="registration__card-bottom">
+                        <a href="#" class="registration__card-button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                        <span class="registration__card-price">180 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="registration__card">
+                <div class="registration__card-inner">
+                    <span class="registration__card-title" data-color="#E5284A">Участник</span>
+                    <span class="registration__card-theme">Форум и Выставка</span>
+                    <ul class="registration__card-list">
+                        <li class="registration__card-item">Без ограничений, за исключением пленарной дискуссии первого
+                            дня.</li>
+                        <li class="registration__card-item">Доступ в зоны кофе-брейка и обеда.</li>
+                        <li class="registration__card-item">Приглашение на вечерний приём</li>
+                    </ul>
+                    <div class="registration__card-bottom">
+                        <a href="#" class="registration__card-button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                        <span class="registration__card-price">120 000 ₽</span>
+                    </div>
+                </div>
+            </div>
+            <div class="registration__card">
+                <div class="registration__card-inner">
+                    <span class="registration__card-title" data-color="#1916B9">Посетитель</span>
+                    <span class="registration__card-theme">Выставка</span>
+                    <ul class="registration__card-list">
+                        <li class="registration__card-item">Добавить</li>
+                    </ul>
+                    <div class="registration__card-bottom">
+                        <a href="#" class="registration__card-button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                        <span class="registration__card-price">₽ • Оплата в зоне регистрации</span>
+                    </div>
+                </div>
+            </div>
+            <div class="registration__card">
+                <div class="registration__card-inner">
+                    <span class="registration__card-title" data-color="#42A9D6">Онлайн Участник</span>
+                    <span class="registration__card-theme">Форум</span>
+                    <ul class="registration__card-list">
+                        <li class="registration__card-item">Доступ к онлайн-трансляциям открытых деловых форматов форума
+                        </li>
+                    </ul>
+                    <div class="registration__card-bottom">
+                        <a href="#" class="registration__card-button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                        <span class="registration__card-price">Бесплатно</span>
+                    </div>
+                </div>
+            </div>
+            <div class="registration__card registration__card_big">
+                <div class="registration__card-inner">
+                    <span class="registration__card-title" data-color="#25DB84">Промокод</span>
+                    <span class="registration__card-theme">Деловой формат</span>
+                    <ul class="registration__card-list">
+                        <li class="registration__card-item">Посещение определенного делового формата.
+                        </li>
+                    </ul>
+                    <div class="registration__card-bottom">
+                        <a href="#" class="registration__card-button">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                        <span class="registration__card-price">Если вы получили приглашение на определенный деловой
+                            формат, промокод выдается вам заранее</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-cards">
+  <div class="contact-cards__item">
+    <div class="contact-cards__item-inner">
+      <img src="img/contact-card/ulia.png" alt="" class="contact-cards__item-img">
+      <div class="contact-cards__item-info">
+        <span class="contact-cards__item-name">Юлия Бартенева</span>
+        <span class="contact-cards__item-position">По вопросам участия в качестве посетителя выставки и/или
+          компании-экспонента</span>
+        <a href="mailto:julia@leadercongress.ru"
+          class="contact-cards__item-link contact-cards__item-link_mail">julia@leadercongress.ru</a>
+        <a href="tel:+74999404248" class="contact-cards__item-link contact-cards__item-link_phone">+7 (499) 940 42
+          48</a>
+      </div>
+    </div>
+  </div>
+</div>
+        <div class="registration__links-line links-line">
+            <div class="links-line__item">
+                <a href="#" class="links-line__link links-line__link_white">Место проведения</a>
+            </div>
+            <div class="links-line__item">
+                <a href="#" class="links-line__link links-line__link_white">Размещение</a>
+            </div>
+            <div class="links-line__item">
+                <a href="#" class="links-line__link links-line__link_white">Список участников</a>
+            </div>
+            <div class="links-line__item">
+                <a href="#" class="links-line__link links-line__link_white">Подробнее о Форуме</a>
+            </div>
+            <div class="links-line__item">
+                <a href="#" class="links-line__link links-line__link_white">Подробнее о Выставке</a>
+            </div>
+        </div>
+    </div>
+</section>
+        </main>
+        <footer class="footer">
+  <div class="footer__wrapper wrapper">
+    <div class="footer__left-block">
+      <span class="footer__text">Использование материалов, размещенных на сайте, допускается с письменного разрешения
+        ООО
+        «Лидерконгресс».</span>
+      <a href="#" class="footer__rules-link">Правила использования материалов сайта</a>
+      <a href="#" class="footer__rules-link">Политика обработки и защиты персональных данных</a>
+    </div>
+    <div class="footer__right-block">
+      <div class="footer__links-block">
+        <span class="footer__title">Скачивайте мобильное приложение</span>
+        <div class="footer__download-block">
+          <a href="#" class="footer__download"><img src="img/footer/google-play.svg" alt=""></a>
+          <a href="#" class="footer__download"><img src="img/footer/app-store.svg" alt=""></a>
+        </div>
+        <span class="footer__title">ООО «ЛидерКонгресс»</span>
+        <a href="mailto:info@liderkongress.ru" class="footer__text">info@liderkongress.ru</a>
+        <a href="tel:88003343443" class="footer__text">8 (800) 334-34-43</a>
+      </div>
+      <div class="footer__social">
+        <span class="footer__title">Транспортная неделя в социальных сетях</span>
+        <div class="footer__social-block">
+          <a href="#" class="footer__social-link"><img src="img/footer/youtube.svg" alt=""></a>
+          <a href="#" class="footer__social-link"><img src="img/footer/vk.svg" alt=""></a>
+          <a href="#" class="footer__social-link"><img src="img/footer/telegram.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="./js/header.js?_v=20230831120717"></script>
+    <script src="./js/colorForPlace.js?_v=20230831120717"></script>
+</body>
+
+</html>

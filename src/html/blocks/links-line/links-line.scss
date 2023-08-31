@@ -17,6 +17,7 @@
   }
 
   &__link {
+    display: block;
     position: relative;
     color: rgba(0, 116, 231, 1);
     font-size: 13px;
@@ -25,6 +26,7 @@
     font-weight: 600;
     letter-spacing: 0.65px;
     text-transform: uppercase;
+    margin-bottom: 35px;
 
     &::after {
       position: absolute;

@@ -1,0 +1,326 @@
+.business-partners {
+
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__item {
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.05);
+        margin-bottom: 25px;
+    }
+
+    &__item-inner {
+        padding: 20px;
+        display: flex;
+    }
+
+    &__item-img-box {
+        background-color: white;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    &__item-img {
+        padding: 16px;
+    }
+
+    &__item-position {
+        display: block;
+        color: #2E97F8;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 8px;
+    }
+
+    &__item-name {
+        display: block;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 12px;
+    }
+
+    &__item-link {
+        display: block;
+        color: white;
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        letter-spacing: -0.28px;
+        padding-left: 22px;
+        margin-bottom: 12px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 16px;
+            height: 16px;
+            background-size: cover;
+            background-image: url(../img/business-partners/link.svg);
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__item-text-block {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        align-self: stretch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__item-text {
+        font-weight: 600;
+        line-height: 140%;
+        opacity: .8;
+    }
+
+    &__item-open {
+        position: relative;
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #FFF;
+        font-family: RFDewi;
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.65px;
+        text-transform: uppercase;
+        padding-right: 15px;
+        padding-left: 0;
+        margin-top: 20px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 6px;
+            background-image: url(../img/business-partners/arrow.svg);
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+            right: 0;
+        }
+
+        &.active::after {
+            transform: translateY(-50%) rotate(0deg);
+        }
+    }
+
+    @include desktop {
+        padding-top: 245px;
+        padding-bottom: 120px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__title {
+            margin-bottom: 80px;
+        }
+
+        &__item {
+            margin-bottom: 25px;
+        }
+
+        &__item-img-box {
+            margin-right: 25px;
+        }
+
+        &__item-position {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-name {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-link {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__item-open {
+            font-size: 13px;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    @include small-desktop {
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__title {
+            margin-bottom: 80px;
+        }
+
+        &__item {
+            margin-bottom: 25px;
+        }
+
+        &__item-img-box {
+            margin-right: 25px;
+        }
+
+        &__item-position {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-name {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-link {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__item-open {
+            font-size: 13px;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    @include tablet {
+        padding-top: 180px;
+        padding-bottom: 180px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__title {
+            margin-bottom: 50px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__item-img-box {
+            margin-right: 25px;
+        }
+
+        &__item-position {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-name {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-link {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__item-open {
+            font-size: 13px;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    @include mobile {
+        padding-top: 115px;
+        padding-bottom: 65px;
+
+        &__wrapper {
+            padding: 0 15px;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+        }
+
+        &__item-inner {
+            flex-direction: column;
+        }
+
+        &__item-img-box {
+            margin-bottom: 25px;
+        }
+
+        &__item-position {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-name {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-link {
+            font-size: 13px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-text {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__item-open {
+            font-size: 12px;
+            letter-spacing: 0.65px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Положение о премии"
+})
+
+<body class="body">
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            @@include('html/blocks/hero/hero-award.html',{})
+            @@include('html/blocks/advantage/advantage-award.html',{})
+            @@include('html/blocks/award/award.html',{})
+            <div class="button-line">
+                <a href="#" class="button">СОСТАВ ЖЮРИ</a>
+                <a href="#" class="button">Положение о премии</a>
+            </div>
+            @@include('html/blocks/contact-cards/contact-cards-1-alt.html',{})
+            <div class="links-line">
+                <div class="links-line__item">
+                    <a href="#" class="links-line__link links-line__link_white">ДОП МЕНЮ</a>
+                </div>
+                <div class="links-line__item">
+                    <a href="#" class="links-line__link links-line__link_white">ДОП МЕНЮ</a>
+                </div>
+            </div>
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

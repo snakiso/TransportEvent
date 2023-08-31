@@ -1,0 +1,406 @@
+.stand {
+    &__wrapper {
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    &__number {
+        border-radius: 13px;
+        background: #FFF;
+        width: fit-content;
+    }
+
+    &__number-text {
+        display: block;
+        position: relative;
+        color: black;
+        font-weight: 600;
+        line-height: 140%;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 24px;
+            height: 24px;
+            background-image: url(../img/stand/Map-Search.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 8px;
+        }
+    }
+
+    &__text {
+        font-weight: 600;
+        line-height: 140%;
+        opacity: .8;
+    }
+
+    &__card {
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    &__card-img-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 24px;
+        background: #FFF;
+    }
+
+    &__card-link {
+        display: block;
+        color: #FFF;
+        position: relative;
+        font-weight: 400;
+        line-height: 140%;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 12px;
+        }
+
+        &_map::before {
+            background-image: url(../img/stand/Map-Wave.svg);
+        }
+
+        &_mail::before {
+            background-image: url(../img/stand/Letter.svg);
+        }
+
+        &_phone::before {
+            background-image: url(../img/stand/Phone.svg);
+        }
+
+        &_site::before {
+            background-image: url(../img/stand/Global.svg);
+        }
+    }
+
+    @include desktop {
+        padding-top: 245px;
+        padding-bottom: 135px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__content {
+            max-width: 820px;
+        }
+
+        &__title {
+            font-size: 48px;
+            letter-spacing: -0.96px;
+            margin-bottom: 16px;
+        }
+
+        &__number {
+            margin-bottom: 20px;
+        }
+
+        &__number-text {
+            padding: 6px 8px 6px 35px;
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__text {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            max-width: 780px;
+        }
+
+        &__button-block {
+            margin-top: 35px;
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 16px;
+        }
+
+        &__card {
+            max-width: 310px;
+        }
+
+        &__card-inner {
+            padding: 12px;
+        }
+
+        &__card-img {
+            display: block;
+            padding: 16px;
+        }
+
+        &__card-list {
+            margin-top: 24px;
+        }
+
+        &__card-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__card-link {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            padding-left: 50px;
+        }
+    }
+
+    @include small-desktop {
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__content {
+            max-width: 820px;
+        }
+
+        &__title {
+            font-size: 48px;
+            letter-spacing: -0.96px;
+            margin-bottom: 16px;
+        }
+
+        &__number {
+            margin-bottom: 20px;
+        }
+
+        &__number-text {
+            padding: 6px 8px 6px 35px;
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__text {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            max-width: 780px;
+        }
+
+        &__button-block {
+            margin-top: 35px;
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 16px;
+        }
+
+        &__card {
+            max-width: 310px;
+        }
+
+        &__card-inner {
+            padding: 12px;
+        }
+
+        &__card-img {
+            display: block;
+            padding: 16px;
+        }
+
+        &__card-list {
+            margin-top: 24px;
+        }
+
+        &__card-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__card-link {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            padding-left: 50px;
+        }
+    }
+
+    @include tablet {
+        padding-top: 105px;
+        padding-bottom: 125px;
+
+        &__wrapper {
+            padding: 0 40px;
+            flex-direction: column;
+        }
+
+        &__content {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 40px;
+            letter-spacing: -0.8px;
+            margin-bottom: 16px;
+        }
+
+        &__number {
+            margin-bottom: 20px;
+        }
+
+        &__number-text {
+            padding: 6px 8px 6px 35px;
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+            max-width: 100%;
+        }
+
+        &__button-block {
+            margin-top: 35px;
+            width: fit-content;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 16px;
+        }
+
+        &__card {
+            max-width: 100%;
+        }
+
+        &__card-inner {
+            padding: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__card-img {
+            display: block;
+            padding: 16px;
+        }
+
+        &__card-list {
+            margin-left: 24px;
+        }
+
+        &__card-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__card-link {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            padding-left: 36px;
+
+            &::before {
+                left: 0;
+            }
+        }
+    }
+
+    @include mobile {
+        padding-top: 160px;
+        padding-bottom: 80px;
+
+        &__wrapper {
+            padding: 0 15px;
+            flex-direction: column;
+        }
+
+        &__content {
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 26px;
+            letter-spacing: -0.52px;
+            margin-bottom: 16px;
+        }
+
+        &__number {
+            margin-bottom: 20px;
+        }
+
+        &__number-text {
+            padding: 6px 8px 6px 35px;
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__text {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+            max-width: 100%;
+        }
+
+        &__button-block {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: repeat(1, auto);
+            gap: 16px;
+        }
+
+        &__button {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__card {
+            max-width: 100%;
+        }
+
+        &__card-inner {
+            padding: 12px;
+        }
+
+        &__card-img {
+            display: block;
+            padding: 16px;
+            max-height: 130px;
+            aspect-ratio: 4/2;
+            object-fit: cover;
+        }
+
+        &__card-list {
+            margin-top: 24px;
+        }
+
+        &__card-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__card-link {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+            padding-left: 36px;
+
+            &::before {
+                left: 0;
+            }
+        }
+    }
+}

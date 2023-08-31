@@ -1,0 +1,105 @@
+<section class="catalog">
+    <div class="catalog__wrapper">
+        <div class="catalog__top">
+            <h2 class="catalog__title title">Каталог экспонентов</h2>
+            <h4 class="catalog__subtitle subtitle">
+                <span>Выбирайте экспонента.</span>
+                <span>Изучайте карточку экспонента.</span>
+                <span>Отправляйте запрос на деловую встречу.</span>
+            </h4>
+        </div>
+        <div class="catalog__tabs">
+            <span class="catalog__tab catalog__tab_list" id="defaultOpen" onclick="openTab(event, 'list')">
+                Списком</span>
+            <span class="catalog__tab catalog__tab_plan" onclick="openTab(event, 'plan')">На плане</span>
+        </div>
+        <div id="list" class="catalog__list-container catalog__tabcontent">
+            <nav class="catalog__list-nav">
+                <div class="catalog__list-filter">
+                    <div class="catalog__list-filter-inner">
+                        <button class="catalog__list-filter-button active">Номер стенда</button>
+                        <button class="catalog__list-filter-button">Организация</button>
+                    </div>
+                </div>
+                <input class="catalog__list-search" type="text" placeholder="Поиск">
+                <a href="#" class="сatalog__button-download button button_white button_download">скачать</a>
+            </nav>
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <div class="catalog__item-inner">
+                        <span class="catalog__item-number">1.1</span>
+                        <div class="catalog__item-content">
+                            <div class="catalog__item-img-box">
+                                <img class="catalog__item-img" src="@img/catalog/1.png" alt="">
+                            </div>
+                            <p class="catalog__item-title">МИНИСТЕРСТВО ТРАНСПОРТА РОССИЙСКОЙ ФЕДЕРАЦИИ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item-inner">
+                        <span class="catalog__item-number">1.2</span>
+                        <div class="catalog__item-content">
+                            <div class="catalog__item-img-box">
+                                <img class="catalog__item-img" src="@img/catalog/2.png" alt="">
+                            </div>
+                            <p class="catalog__item-title">ФГКУ РОСГРАНСТРОЙ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item-inner">
+                        <span class="catalog__item-number">1.3</span>
+                        <div class="catalog__item-content">
+                            <div class="catalog__item-img-box">
+                                <img class="catalog__item-img" src="@img/catalog/2.png" alt="">
+                            </div>
+                            <p class="catalog__item-title">ФКУ «РОСТРАНСМОДЕРНИЗАЦИЯ»</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item-inner">
+                        <span class="catalog__item-number">1.4</span>
+                        <div class="catalog__item-content">
+                            <div class="catalog__item-img-box">
+                                <img class="catalog__item-img" src="@img/catalog/4.png" alt="">
+                            </div>
+                            <p class="catalog__item-title">АССОЦИАЦИЯ «ЦИФРОВОЙ ТРАНСПОРТ И ЛОГИСТИКА»</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item-inner">
+                        <span class="catalog__item-number">1.5</span>
+                        <div class="catalog__item-content">
+                            <div class="catalog__item-img-box">
+                                <img class="catalog__item-img" src="@img/catalog/5.png" alt="">
+                            </div>
+                            <p class="catalog__item-title">МЕГАПОЛИС ИТ</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="catalog__item">
+                    <div class="catalog__item-inner">
+                        <span class="catalog__item-number">1.6</span>
+                        <div class="catalog__item-content">
+                            <div class="catalog__item-img-box">
+                                <img class="catalog__item-img" src="@img/catalog/6.png" alt="">
+                            </div>
+                            <p class="catalog__item-title">АО «ГТЛК»</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="plan" class="catalog__plan-container catalog__tabcontent">
+            @@include('../catalog/plan.html',{})
+            <div class="catalog__plan-download">
+                <a href="" class="button button_white button_download">СКАЧАТЬ ПЛАН</a>
+                <span class="catalog__plan-download-detail">ПЕЧАТАТЬ ИДЕАЛЬНО НА A3</span>
+            </div>
+        </div>
+        @@include('../contact-cards/contact-cards-1.html',{})
+    </div>
+</section>

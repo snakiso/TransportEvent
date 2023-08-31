@@ -1,0 +1,361 @@
+.presentation {
+
+  &__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  &__accordion-container {
+    flex-direction: column;
+  }
+
+  &__accordion {
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    overflow: hidden;
+    transition: ease-in .2s;
+
+    &.active {
+      max-height: fit-content !important;
+
+      .presentation__accordion-arrow {
+        transform: rotate(180deg);
+
+      }
+    }
+  }
+
+  &__accordion-inner {
+    padding-top: 30px;
+  }
+
+  &__accordion-title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__accordion-title {
+    font-weight: 400;
+    line-height: 140%;
+  }
+
+  &__accordion-arrow-box {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.10);
+  }
+
+  &__accordion-arrow {
+    padding: 10px;
+    width: 40px;
+    height: 35px;
+    transition: ease-in .2s;
+  }
+
+  &__accordion-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  &__card-box {
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-name {
+    display: block;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+
+  &__card-text {
+    font-weight: 600;
+    line-height: 140%;
+    opacity: .8;
+    flex: 1;
+  }
+
+  &__card-link {
+    position: relative;
+    color: white;
+    font-weight: 600;
+    line-height: 140%;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../img/presentation/Presentation.svg);
+    }
+  }
+
+  @include desktop {
+    padding-top: 245px;
+    padding-bottom: 120px;
+
+    &__wrapper {
+      padding: 0 40px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__accordion {
+      margin-bottom: 40px;
+    }
+
+    &__accordion-title {
+      font-size: 22px;
+      letter-spacing: -0.44px;
+    }
+
+    &__accordion-content {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+
+    &__card {
+      padding: 12px;
+      flex-basis: 50%;
+    }
+
+    &__card-box {
+      padding: 12px 20px;
+    }
+
+    &__card-img {
+      max-width: 120px;
+      border-radius: 24px;
+      aspect-ratio: 3/5;
+      filter: grayscale(.8);
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    &__card-name {
+      font-size: 16px;
+      letter-spacing: -0.32px;
+    }
+
+    &__card-text {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+
+    }
+
+    &__card-link {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      padding: 8px 12px 8px 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include small-desktop {
+    padding-top: 200px;
+    padding-bottom: 160px;
+
+    &__wrapper {
+      padding: 0 40px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__accordion {
+      margin-bottom: 40px;
+    }
+
+    &__accordion-title {
+      font-size: 22px;
+      letter-spacing: -0.44px;
+    }
+
+    &__accordion-content {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+
+    &__card {
+      padding: 12px;
+      flex-basis: 50%;
+    }
+
+    &__card-box {
+      padding: 12px 20px;
+    }
+
+    &__card-img {
+      max-width: 120px;
+      border-radius: 24px;
+      aspect-ratio: 3/5;
+      filter: grayscale(.8);
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    &__card-name {
+      font-size: 16px;
+      letter-spacing: -0.32px;
+    }
+
+    &__card-text {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+
+    }
+
+    &__card-link {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      padding: 8px 12px 8px 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 180px;
+    padding-bottom: 120px;
+
+    &__wrapper {
+      padding: 0 40px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__accordion {
+      margin-bottom: 40px;
+    }
+
+    &__accordion-title {
+      font-size: 20px;
+      letter-spacing: -0.4px;
+    }
+
+    &__accordion-content {
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+
+    &__card {
+      padding: 12px;
+      flex-basis: 50%;
+    }
+
+    &__card-box {
+      padding: 12px 20px;
+      flex-direction: column;
+    }
+
+    &__card-img {
+      max-width: 140px;
+      border-radius: 24px;
+      aspect-ratio: 4/4;
+      filter: grayscale(.8);
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    &__card-name {
+      font-size: 16px;
+      letter-spacing: -0.32px;
+    }
+
+    &__card-text {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      margin-bottom: 20px;
+
+    }
+
+    &__card-link {
+      font-size: 14px;
+      letter-spacing: -0.28px;
+      padding: 8px 12px 8px 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  @include mobile {
+    padding-top: 105px;
+    padding-bottom: 65px;
+
+    &__wrapper {
+      padding: 0 15px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__accordion {
+      margin-bottom: 40px;
+    }
+
+    &__accordion-title {
+      font-size: 18px;
+      letter-spacing: -0.36px;
+    }
+
+    &__accordion-content {
+      margin-left: -6px;
+      margin-right: -6px;
+    }
+
+    &__card {
+      padding: 6px;
+      flex-basis: 100%;
+    }
+
+    &__card-box {
+      padding: 12px 20px;
+      flex-direction: column;
+    }
+
+    &__card-img {
+      max-width: 160px;
+      border-radius: 24px;
+      aspect-ratio: 5/4;
+      filter: grayscale(.8);
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    &__card-name {
+      font-size: 16px;
+      letter-spacing: -0.32px;
+    }
+
+    &__card-text {
+      font-size: 13px;
+      letter-spacing: -0.26px;
+      margin-bottom: 20px;
+
+    }
+
+    &__card-link {
+      font-size: 13px;
+      letter-spacing: -0.26px;
+      padding: 8px 12px 8px 40px;
+      margin-bottom: 20px;
+    }
+  }
+}

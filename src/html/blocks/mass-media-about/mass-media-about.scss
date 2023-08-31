@@ -1,0 +1,261 @@
+.mass-media-about {
+
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__top-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__list {
+        display: grid;
+    }
+
+    &__item {
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    &__item-date {
+        display: block;
+        font-weight: 600;
+        line-height: 140%;
+        opacity: .5;
+    }
+
+    &__item-title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        align-self: stretch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 12px;
+    }
+
+    &__item-text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        align-self: stretch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 20px;
+    }
+
+    &__item-bottom {
+        display: flex;
+    }
+
+    &__item-organization,
+    &__item-link {
+        color: white;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+
+    &__item-link {
+        position: relative;
+        margin-left: 25px;
+        padding-right: 20px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-image: url(../img/link-arrow.svg);
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    @include desktop {
+        padding-top: 245px;
+        padding-bottom: 115px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__list {
+            margin-top: 40px;
+            gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item-inner {
+            padding: 32px;
+        }
+
+        &__item-date {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-title {
+            font-size: 22px;
+            letter-spacing: -0.44px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-organization,
+        &__item-link {
+            font-size: 13px;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    @include small-desktop {
+        padding-top: 200px;
+        padding-bottom: 100px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__list {
+            margin-top: 40px;
+            gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item-inner {
+            padding: 32px;
+        }
+
+        &__item-date {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-title {
+            font-size: 22px;
+            letter-spacing: -0.44px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-organization,
+        &__item-link {
+            font-size: 13px;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    @include tablet {
+        padding-top: 140px;
+        padding-bottom: 80px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__top-block {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            margin-top: 40px;
+            gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item-inner {
+            padding: 32px;
+        }
+
+        &__item-date {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-title {
+            font-size: 20px;
+            letter-spacing: -0.4px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-organization,
+        &__item-link {
+            font-size: 13px;
+            letter-spacing: 0.65px;
+        }
+    }
+
+    @include mobile {
+        padding-top: 115px;
+        padding-bottom: 65px;
+
+        &__wrapper {
+            padding: 0 15px;
+        }
+
+        &__top-block {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            margin-bottom: 24px;
+        }
+
+        &__list {
+            margin-top: 25px;
+            gap: 12px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__item-inner {
+            padding: 32px;
+        }
+
+        &__item-date {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-title {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-text {
+            font-size: 14px;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-organization,
+        &__item-link {
+            font-size: 12px;
+            letter-spacing: 0.6px;
+        }
+    }
+}

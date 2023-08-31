@@ -1,0 +1,220 @@
+<section class="programm">
+    <div class="programm__wrapper">
+        <div class="programm__top-block">
+            <h2 class="programm__title title">Программа форума</h2>
+            <h4 class="programm__subtitle subtitle">Выбирайте день.<br>Изучайте повестку и состав участников.
+                <br>Добавляйте
+                мероприятия в ваш
+                личный календарь.
+            </h4>
+            <div class="programm__download-block">
+                <div class="programm__download-item">
+                    <a class="programm__button button button_white button_download" href="">СКАЧАТЬ ПРОГРАММУ</a>
+                    <p class="programm__download-item-content">ГРАФИК | ПОВЕСТКА | СПИКЕРЫ <span>| A4</span></p>
+                </div>
+                <div class="programm__download-item">
+                    <a class="programm__button button button_white button_download" href="">СКАЧАТЬ АРХИТЕКТУРУ</a>
+                    <p class="programm__download-item-content">ГРАФИК КРУПНО <span>| A3</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="programm__sessions">
+            <button class="programm__sessions-item programm__sessions-item_list active">Сессии списком</button>
+            <button class="programm__sessions-item programm__sessions-item_parallel">Сессии в параллели</button>
+        </div>
+        <div class="tabs">
+            <div class="tabs__inner">
+                <button class="tabs__link active" onclick="openTab(event, 'wednesday')" id="defaultOpen">
+                    <div class="tabs__link-inner">
+                        <span class="tabs__date">14 ноября</span>
+                        <span class="tabs__day">Среда</span>
+                    </div>
+                </button>
+                <button class="tabs__link" onclick="openTab(event, 'thursday')">
+                    <div class="tabs__link-inner">
+                        <span class="tabs__date">15 ноября</span>
+                        <span class="tabs__day">Четверг</span>
+                    </div>
+                </button>
+                <button class="tabs__link" onclick="openTab(event, 'friday')">
+                    <div class="tabs__link-inner">
+                        <span class="tabs__date">16 ноября</span>
+                        <span class="tabs__day">Пятница</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <ul id="wednesday" class="programm__list tabcontent">
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#6D73FF">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#22B130">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Заседание Совета руководителей уполномоченных органов в области
+                        транспорта государств-членов Евразийского экономического
+                        союза</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#403DD4">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#FF906D">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#D06DFF">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Заседание Совета руководителей уполномоченных органов в области
+                        транспорта
+                        государств-членов Евразийского экономического
+                        союза</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#DF980E">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="thursday" class="programm__list tabcontent">
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#6D73FF">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#22B130">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Заседание Совета руководителей уполномоченных органов в области
+                        транспорта государств-членов Евразийского экономического
+                        союза</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#403DD4">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#FF906D">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul id="friday" class="programm__list tabcontent">
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#6D73FF">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Система тарификации на железнодорожном транспорте</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="programm__item">
+                <div class="programm__item-inner">
+                    <div class="programm__item-top">
+                        <span class="programm__item-place" data-color="#22B130">Зал «Бетанкур»</span>
+                        <span class="programm__item-time">9:30 – 10:00</span>
+                    </div>
+                    <p class="programm__item-content">Заседание Совета руководителей уполномоченных органов в области
+                        транспорта государств-членов Евразийского экономического
+                        союза</p>
+                    <div class="programm__item-buttons">
+                        <button class="programm__item-calendar">В КАЛЕНДАРЬ</button>
+                        <a href="#" class="programm__item-link">ПОДРОБНЕЕ</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        @@include('../contact-cards/contact-cards-2.html',{})
+    </div>
+</section>

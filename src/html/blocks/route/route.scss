@@ -56,7 +56,7 @@
 
   @include desktop {
     &__wrapper {
-      padding: 200px 30px;
+      padding: 230px 30px 115px 30px;
     }
 
     &__title {
@@ -76,7 +76,7 @@
     &__map {
       display: block;
       width: 100%;
-      margin-bottom: 80px;
+      margin-bottom: 120px;
     }
 
     &__transport {
@@ -108,7 +108,7 @@
       letter-spacing: -0.36px;
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 24px;
       }
     }
   }
@@ -174,7 +174,7 @@
 
   @include tablet {
     &__wrapper {
-      padding: 180px 40px;
+      padding: 180px 40px 85px 40px;
     }
 
     &__title {
@@ -194,7 +194,7 @@
     &__map {
       display: block;
       width: 100%;
-      margin-bottom: 80px;
+      margin-bottom: 55px;
       aspect-ratio: 4/4;
       border-radius: 25px;
       object-fit: cover;
@@ -229,14 +229,14 @@
       letter-spacing: -0.32px;
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }
 
   @include mobile {
     &__wrapper {
-      padding: 160px 15px;
+      padding: 105px 15px 65px 15px;
     }
 
     &__title {
@@ -256,7 +256,7 @@
     &__map {
       display: block;
       width: 100%;
-      margin-bottom: 80px;
+      margin-bottom: 20px;
       aspect-ratio: 4/5;
       border-radius: 25px;
       object-fit: cover;
@@ -266,7 +266,11 @@
       font-size: 28px;
       line-height: 120%;
       letter-spacing: -0.84px;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+
+      &::before {
+        top: -10px
+      }
     }
 
     &__block {
@@ -289,9 +293,10 @@
       font-size: 16px;
       line-height: 140%;
       letter-spacing: -0.32px;
+      max-width: 320px;
 
       &:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
     }
   }

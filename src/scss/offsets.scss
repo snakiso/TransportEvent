@@ -1,3 +1,19 @@
 .padding-bottom {
-  padding-bottom: 160px;
+
+
+  @include desktop {
+    padding-bottom: 160px;
+  }
+
+  @include small-desktop {
+    padding-bottom: 160px;
+  }
+
+  @include tablet {
+    padding-bottom: 80px;
+  }
+
+  @include mobile {
+    padding-bottom: 30px;
+  }
 }

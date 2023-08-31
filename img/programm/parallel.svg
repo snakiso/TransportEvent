@@ -1,0 +1,10 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icons">
+<path id="Vector" d="M4 17.5C4 15.6144 4 14.6716 4.52721 14.0858C5.05442 13.5 5.90294 13.5 7.6 13.5H18.4C20.0971 13.5 20.9456 13.5 21.4728 14.0858C22 14.6716 22 15.6144 22 17.5C22 19.3856 22 20.3284 21.4728 20.9142C20.9456 21.5 20.0971 21.5 18.4 21.5H7.6C5.90294 21.5 5.05442 21.5 4.52721 20.9142C4 20.3284 4 19.3856 4 17.5Z" stroke="white" stroke-width="1.5"/>
+<path id="Vector_2" d="M2 6.5C2 4.61438 2 3.67157 2.58579 3.08579C3.17157 2.5 4.11438 2.5 6 2.5H18C19.8856 2.5 20.8284 2.5 21.4142 3.08579C22 3.67157 22 4.61438 22 6.5C22 8.38562 22 9.32843 21.4142 9.91421C20.8284 10.5 19.8856 10.5 18 10.5H6C4.11438 10.5 3.17157 10.5 2.58579 9.91421C2 9.32843 2 8.38562 2 6.5Z" stroke="white" stroke-width="1.5"/>
+<path id="Vector_3" opacity="0.5" d="M11 6.5H18" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path id="Vector_4" opacity="0.5" d="M6 6.5H8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path id="Vector_5" opacity="0.5" d="M12 17.5H18" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<path id="Vector_6" opacity="0.5" d="M8 17.5H9" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+</svg>

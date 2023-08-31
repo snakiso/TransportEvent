@@ -1,0 +1,507 @@
+.programm {
+
+  &__wrapper {
+    max-width: 1280px;
+    margin: auto;
+  }
+
+  &__top-block {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__download-block {
+    display: flex;
+  }
+
+  &__download-item-content {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    span {
+      opacity: 0.4;
+    }
+  }
+
+  &__sessions {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__sessions-item {
+    position: relative;
+    font-weight: 600;
+    opacity: .5;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+
+    &_list::before {
+      background-image: url(../img/programm/list.svg);
+    }
+
+    &_parallel::before {
+      background-image: url(../img/programm/parallel.svg);
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__list {
+    display: none;
+    flex-wrap: wrap;
+    margin: -9px;
+    animation: fadeEffect 1s;
+  }
+
+  @keyframes fadeEffect {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    padding: 9px;
+
+  }
+
+  &__item-inner {
+    border-radius: 19px;
+    background: #FFF;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-place {
+    font-weight: 600;
+  }
+
+  &__item-time {
+    color: #000;
+    font-weight: 600;
+  }
+
+  &__item-content {
+    color: #000;
+    font-weight: 600;
+  }
+
+  &__item-calendar {
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+    border-radius: 59px;
+    border: none;
+    padding: 11px 7px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+  }
+
+  &__item-link {
+    color: #000;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+    margin-left: 3px;
+  }
+
+  @include desktop {
+    padding-top: 245px;
+    padding-bottom: 160px;
+
+    &__wrapper {
+      padding: 0 40px;
+    }
+
+    &__title,
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+
+    &__download-item-content {
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: -0.24px;
+    }
+
+    &__button {
+      margin-bottom: 15px;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    &__sessions {
+      margin-top: 80px;
+      margin-bottom: 60px;
+    }
+
+    &__sessions-item {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+      padding-left: 40px;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    &__tabs-date {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+    }
+
+    &__tabs-day {
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.28px;
+    }
+
+    &__list {
+      margin-bottom: 80px;
+    }
+
+    &__item {
+      flex-basis: 33.3%;
+    }
+
+    &__item-inner {
+      min-height: 220px;
+    }
+
+    &__item-top {
+      margin-bottom: 20px;
+    }
+
+    &__item-place {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.32px;
+    }
+
+    &__item-time {
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+    }
+
+    &__item-content {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.32px;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+  }
+
+  @include small-desktop {
+    padding-top: 200px;
+    padding-bottom: 160px;
+
+    &__wrapper {
+      padding: 0 40px;
+    }
+
+    &__title,
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+
+    &__download-item-content {
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: -0.24px;
+    }
+
+    &__button {
+      margin-bottom: 15px;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    &__sessions {
+      margin-top: 80px;
+      margin-bottom: 65px;
+    }
+
+    &__sessions-item {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+      padding-left: 40px;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    &__tabs-date {
+      font-size: 18px;
+      line-height: 140%;
+      letter-spacing: -0.36px;
+    }
+
+    &__tabs-day {
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.28px;
+    }
+
+    &__list {
+      margin-bottom: 80px;
+    }
+
+    &__item {
+      flex-basis: 33.3%;
+    }
+
+    &__item-inner {
+      min-height: 220px;
+    }
+
+    &__item-top {
+      margin-bottom: 20px;
+    }
+
+    &__item-place {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.32px;
+    }
+
+    &__item-time {
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+    }
+
+    &__item-content {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.32px;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+  }
+
+  @include tablet {
+    padding-top: 180px;
+    padding-bottom: 120px;
+
+    &__wrapper {
+      padding: 0 40px;
+    }
+
+    &__title,
+    &__subtitle {
+      margin-bottom: 50px;
+    }
+
+    &__download-item-content {
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: -0.24px;
+    }
+
+    &__button {
+      margin-bottom: 15px;
+
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
+    }
+
+    &__sessions {
+      margin-top: 80px;
+      margin-bottom: 65px;
+    }
+
+    &__sessions-item {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.32px;
+      padding-left: 40px;
+
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    &__tabs-date {
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: -0.32px;
+    }
+
+    &__tabs-day {
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: -0.26px;
+    }
+
+    &__list {
+      margin-bottom: 80px;
+    }
+
+    &__item {
+      flex-basis: 50%;
+    }
+
+    &__item-inner {
+      min-height: 220px;
+    }
+
+    &__item-top {
+      margin-bottom: 20px;
+    }
+
+    &__item-place {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      letter-spacing: -0.32px;
+    }
+
+    &__item-time {
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+    }
+
+    &__item-content {
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.32px;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+  }
+
+  @include mobile {
+    padding-top: 115px;
+    padding-bottom: 65px;
+
+    &__wrapper {
+      padding: 0 15px;
+    }
+
+    &__title,
+    &__subtitle {
+      margin-bottom: 35px;
+    }
+
+    &__download-block {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__download-item {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+
+    &__download-item-content {
+      font-size: 12px;
+      line-height: 140%;
+      letter-spacing: -0.24px;
+    }
+
+    &__button {
+      margin-bottom: 15px;
+    }
+
+    &__sessions {
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    &__sessions-item {
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.28px;
+      padding-left: 25px;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+
+      &::before {
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    &__list {
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      flex-basis: 100%;
+    }
+
+    &__item-inner {
+      min-height: 220px;
+    }
+
+    &__item-top {
+      margin-bottom: 20px;
+    }
+
+    &__item-place {
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+    }
+
+    &__item-time {
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+    }
+
+    &__item-content {
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: -0.28px;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+  }
+}

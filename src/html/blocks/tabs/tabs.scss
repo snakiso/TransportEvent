@@ -1,0 +1,78 @@
+.tabs {
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.08);
+  max-width: 950px;
+  margin: 0 auto 25px auto;
+
+  &__inner {
+    padding: 4px;
+    display: flex;
+  }
+
+  &__link {
+    cursor: pointer;
+    flex-basis: 33.3%;
+    background: none;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    opacity: 0.5;
+
+
+    &.active {
+      opacity: 1;
+      background: rgba(255, 255, 255, 0.05);
+
+      .tabs__day {
+        opacity: .5;
+      }
+    }
+  }
+
+  &__link-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 14px 24px;
+  }
+
+  &__date {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: RFDewi;
+
+  }
+
+  &__day {
+    font-weight: 400;
+    font-family: RFDewi;
+  }
+
+  &_small {
+    max-width: 550px;
+    margin: 0 0 40px 0;
+  }
+
+  @include mobile {
+    &__date {
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.28px;
+    }
+
+    &__day {
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: -0.26px;
+    }
+
+    &__link-inner {
+      padding: 10px 12px;
+    }
+
+    &_small {
+      .tabs__link-inner {
+        padding: 15px 4px;
+      }
+    }
+  }
+}

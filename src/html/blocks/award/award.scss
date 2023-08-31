@@ -1,0 +1,571 @@
+.award {
+    &__wrapper {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    &__nomination-number-box {
+        border-radius: 24px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        height: fit-content;
+    }
+
+    &__nomination-number-box-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__nomination-number {
+        font-weight: 400;
+        background: linear-gradient(175deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__nomination-number-text {
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    &__nomination-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    &__nomination-item-title {
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    &__entrant-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__entrants {
+        display: flex;
+    }
+
+    &__entrant-box {
+        border-radius: 31px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__entrant-box-inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__entrant-img-box {
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.04);
+    }
+
+    &__entrant-text {
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    &__steps-item-step {
+        display: flex;
+        align-items: center;
+    }
+
+    &__steps-item-number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.10);
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    &__steps-item-title {
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    &__steps-item-date {
+        display: block;
+        font-weight: 400;
+        line-height: 140%;
+        opacity: .5;
+    }
+
+    @include desktop {
+        margin-top: 240px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__subtitle {
+            font-size: 52px;
+            letter-spacing: -1.56px;
+        }
+
+        &__nomination-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__nomination-number-box-inner {
+            padding: 40px 85px;
+        }
+
+        &__nomination-number {
+            font-size: 182px;
+            letter-spacing: -5.46px;
+        }
+
+        &__nomination-number-text {
+            font-size: 24px;
+            letter-spacing: -0.48px
+        }
+
+        &__nomination-item {
+            padding-bottom: 60px;
+            margin-bottom: 60px;
+            max-width: 780px;
+        }
+
+        &__nomination-item-title {
+            font-size: 48px;
+            letter-spacing: -0.96px;
+            margin-bottom: 25px;
+        }
+
+        &__entrant-container {
+            margin: 120px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__entrants {
+            max-width: 780px;
+        }
+
+        &__entrant-box-inner {
+            padding: 20px;
+        }
+
+        &__entrant-img-box {
+            margin-right: 25px;
+        }
+
+        &__entrant-img {
+            padding: 13px;
+            display: block;
+        }
+
+        &__entrant-text {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            max-width: 440px;
+        }
+
+        &__steps-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 240px;
+        }
+
+        &__steps-list {
+            max-width: 780px;
+            width: 100%;
+        }
+
+        &__steps-item {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__steps-item-number {
+            padding: 10px;
+            width: 35px;
+            height: 35px;
+            margin-right: 12px;
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__steps-item-title {
+            font-size: 36px;
+            letter-spacing: -0.72px;
+        }
+
+        &__steps-item-date {
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+    }
+
+    @include small-desktop {
+        margin-top: 200px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__subtitle {
+            font-size: 52px;
+            letter-spacing: -1.56px;
+        }
+
+        &__nomination-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__nomination-number-box-inner {
+            padding: 40px 85px;
+        }
+
+        &__nomination-number {
+            font-size: 182px;
+            letter-spacing: -5.46px;
+        }
+
+        &__nomination-number-text {
+            font-size: 24px;
+            letter-spacing: -0.48px
+        }
+
+        &__nomination-item {
+            padding-bottom: 60px;
+            margin-bottom: 60px;
+            max-width: 780px;
+        }
+
+        &__nomination-item-title {
+            font-size: 48px;
+            letter-spacing: -0.96px;
+            margin-bottom: 25px;
+        }
+
+        &__entrant-container {
+            margin: 120px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__entrants {
+            max-width: 780px;
+        }
+
+        &__entrant-box-inner {
+            padding: 20px;
+        }
+
+        &__entrant-img-box {
+            margin-right: 25px;
+        }
+
+        &__entrant-img {
+            padding: 13px;
+            display: block;
+        }
+
+        &__entrant-text {
+            font-size: 18px;
+            letter-spacing: -0.36px;
+            max-width: 440px;
+        }
+
+        &__steps-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 240px;
+        }
+
+        &__steps-list {
+            max-width: 780px;
+            width: 100%;
+        }
+
+        &__steps-item {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__steps-item-number {
+            padding: 10px;
+            width: 35px;
+            height: 35px;
+            margin-right: 12px;
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__steps-item-title {
+            font-size: 36px;
+            letter-spacing: -0.72px;
+        }
+
+        &__steps-item-date {
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+    }
+
+    @include tablet {
+        margin-top: 160px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__subtitle {
+            font-size: 44px;
+            letter-spacing: -1.32px;
+            margin-bottom: 40px;
+        }
+
+        &__nomination-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__nomination-number-box {
+            margin-bottom: 40px;
+        }
+
+        &__nomination-number-box-inner {
+            padding: 40px 85px;
+        }
+
+        &__nomination-number {
+            font-size: 182px;
+            letter-spacing: -5.46px;
+        }
+
+        &__nomination-number-text {
+            font-size: 24px;
+            letter-spacing: -0.48px
+        }
+
+        &__nomination-item {
+            padding-bottom: 60px;
+            margin-bottom: 32px;
+            max-width: 100%;
+        }
+
+        &__nomination-item-title {
+            font-size: 40px;
+            letter-spacing: -0.8px;
+            margin-bottom: 25px;
+        }
+
+        &__entrant-container {
+            margin: 65px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__entrants {
+            max-width: 780px;
+            flex-direction: column;
+        }
+
+        &__entrant-box {
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+        }
+
+        &__entrant-box-inner {
+            padding: 20px;
+        }
+
+        &__entrant-img-box {
+            margin-right: 25px;
+        }
+
+        &__entrant-img {
+            padding: 13px;
+            display: block;
+        }
+
+        &__entrant-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+            max-width: 330px;
+        }
+
+        &__steps-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 120px;
+        }
+
+        &__steps-list {
+            max-width: 780px;
+            width: 100%;
+        }
+
+        &__steps-item {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__steps-item-number {
+            padding: 10px;
+            width: 35px;
+            height: 35px;
+            margin-right: 12px;
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__steps-item-title {
+            font-size: 28px;
+            letter-spacing: -0.56px;
+        }
+
+        &__steps-item-date {
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+    }
+
+    @include mobile {
+        margin-top: 65px;
+
+        &__wrapper {
+            padding: 0 15px;
+        }
+
+        &__subtitle {
+            font-size: 28px;
+            letter-spacing: -0.84px;
+            margin-bottom: 40px;
+        }
+
+        &__nomination-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__nomination-number-box {
+            margin-bottom: 40px;
+        }
+
+        &__nomination-number-box-inner {
+            padding: 35px 85px;
+        }
+
+        &__nomination-number {
+            font-size: 120px;
+            letter-spacing: -3.6px;
+        }
+
+        &__nomination-number-text {
+            font-size: 20px;
+            letter-spacing: -0.4px
+        }
+
+        &__nomination-item {
+            padding-bottom: 32px;
+            margin-bottom: 32px;
+            max-width: 100%;
+        }
+
+        &__nomination-item-title {
+            font-size: 26px;
+            letter-spacing: -0.52px;
+            margin-bottom: 25px;
+        }
+
+        &__entrant-container {
+            margin: 65px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__entrants {
+            max-width: 780px;
+            flex-direction: column;
+        }
+
+        &__entrant-box {
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+        }
+
+        &__entrant-box-inner {
+            padding: 20px;
+        }
+
+        &__entrant-img-box {
+            margin-right: 25px;
+        }
+
+        &__entrant-img {
+            padding: 13px;
+            display: block;
+        }
+
+        &__entrant-text {
+            font-size: 16px;
+            letter-spacing: -0.32px;
+            max-width: 330px;
+        }
+
+        &__steps-container {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 120px;
+        }
+
+        &__steps-list {
+            max-width: 780px;
+            width: 100%;
+        }
+
+        &__steps-item {
+            &:not(:last-child) {
+                margin-bottom: 50px;
+            }
+        }
+
+        &__steps-item-number {
+            padding: 10px;
+            width: 35px;
+            height: 35px;
+            margin-right: 12px;
+            font-size: 16px;
+            letter-spacing: -0.32px;
+        }
+
+        &__steps-item-title {
+            font-size: 28px;
+            letter-spacing: -0.56px;
+        }
+
+        &__steps-item-date {
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: -0.36px;
+        }
+    }
+}

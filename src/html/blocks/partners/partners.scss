@@ -32,15 +32,15 @@
 
     &__wrapper {
       padding-top: 160px;
-      padding-bottom: 160px;
-      row-gap: 100px;
+      padding-bottom: 120px;
+      row-gap: 60px;
     }
 
     &__title {
       font-size: 52px;
       line-height: 120%;
       letter-spacing: -1.56px;
-      margin-bottom: 50px;
+      margin-bottom: 35px;
     }
 
     &__box {
@@ -49,7 +49,7 @@
       margin-left: -$gap;
       margin-right: -$gap;
       max-width: 1240px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
 
     &__item {

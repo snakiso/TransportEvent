@@ -19,6 +19,22 @@
     color: black;
   }
 
+  &_download {
+    padding: 25px 40px 25px 70px !important;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../img/download.svg);
+    }
+  }
+
   @include desktop {
     padding: 28px 40px;
     font-size: 13px;
@@ -37,5 +53,13 @@
   @include mobile {
     padding: 18px 12px;
     font-size: 12px;
+
+    &_download {
+      padding: 18px 12px 18px 42px !important;
+
+      &::before {
+        left: 12px;
+      }
+    }
   }
 }

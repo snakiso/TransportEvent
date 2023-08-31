@@ -168,7 +168,13 @@
     }
 
     &__item-inner {
-      min-height: 170px;
+      padding: 20px 16px;
+      min-height: 165px;
+    }
+
+    &__item-date {
+      font-size: 13px;
+      letter-spacing: -.26px;
     }
 
     &__item-text {

@@ -1,0 +1,142 @@
+.info-partners {
+
+    &__wrapper {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__box-title {
+        font-weight: 600;
+        line-height: 125%;
+    }
+
+    &__container {
+        margin: -12px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        display: block;
+        padding: 12px;
+    }
+
+    &__item-inner {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 20px;
+        border-radius: 24px;
+        height: 120px;
+    }
+
+    @include desktop {
+        padding-top: 245px;
+        padding-bottom: 120px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__box {
+            margin-bottom: 40px;
+        }
+
+        &__box-title {
+            font-size: 36px;
+            letter-spacing: -0.72px;
+            margin-bottom: 24px;
+        }
+    }
+
+    @include small-desktop {
+        padding-top: 245px;
+        padding-bottom: 115px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__box {
+            margin-bottom: 40px;
+        }
+
+        &__box-title {
+            font-size: 36px;
+            letter-spacing: -0.72px;
+            margin-bottom: 24px;
+        }
+    }
+
+    @include tablet {
+        padding-top: 180px;
+        padding-bottom: 120px;
+
+        &__wrapper {
+            padding: 0 40px;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__box {
+            margin-bottom: 40px;
+        }
+
+        &__box-title {
+            font-size: 28px;
+            letter-spacing: -0.44px;
+            margin-bottom: 24px;
+        }
+    }
+
+    @include mobile {
+        padding-top: 135px;
+        padding-bottom: 65px;
+
+        &__wrapper {
+            padding: 0 15px;
+        }
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__box {
+            margin-bottom: 25px;
+        }
+
+        &__box-title {
+            font-size: 22px;
+            letter-spacing: -0.44px;
+            margin-bottom: 24px;
+        }
+
+        &__container {
+            flex-direction: column;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__item-inner {
+            justify-content: center;
+        }
+
+        // &__item-img {
+        //     display: block;
+        //     width: 100%;
+        // }
+    }
+}
