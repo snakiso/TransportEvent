@@ -9,13 +9,11 @@
         flex-direction: column;
     }
 
-    &__column-header {
+
+    &__column-header-inner {
         cursor: pointer;
         border-radius: 24px;
         background: rgba(255, 255, 255, 0.10);
-    }
-
-    &__column-header-inner {
         display: flex;
         flex-direction: column;
     }
@@ -131,6 +129,22 @@
             display: flex;
             margin-left: -32px;
             margin-right: -32px;
+
+            &_mobile {
+                display: none;
+            }
+
+            &_desktop {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__container-header,
+        &__columns {
+            display: flex;
+            margin-left: -32px;
+            margin-right: -32px;
         }
 
         &__column {
@@ -142,13 +156,24 @@
         &__column-header {
             margin-bottom: 32px;
 
-            &:hover {
-                background: rgba(255, 255, 255, 0.20);
+            &_desktop {
+                padding: 0 32px;
+                flex-basis: 33.3%;
+
+                &.active {
+                    .gallery__column-header-inner {
+                        background: rgba(255, 255, 255, 0.20);
+                    }
+                }
             }
         }
 
         &__column-header-inner {
             padding: 24px;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.20);
+            }
         }
 
         &__column-header-title {
@@ -212,7 +237,24 @@
             margin-bottom: 40px;
         }
 
+      
         &__container {
+            display: flex;
+            margin-left: -32px;
+            margin-right: -32px;
+
+            &_mobile {
+                display: none;
+            }
+
+            &_desktop {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        &__container-header,
+        &__columns {
             display: flex;
             margin-left: -32px;
             margin-right: -32px;
@@ -227,14 +269,26 @@
         &__column-header {
             margin-bottom: 32px;
 
-            &:hover {
-                background: rgba(255, 255, 255, 0.20);
+            &_desktop {
+                padding: 0 32px;
+                flex-basis: 33.3%;
+
+                &.active {
+                    .gallery__column-header-inner {
+                        background: rgba(255, 255, 255, 0.20);
+                    }
+                }
             }
         }
 
         &__column-header-inner {
             padding: 24px;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.20);
+            }
         }
+
 
         &__column-header-title {
             font-size: 48px;
@@ -300,6 +354,10 @@
         &__container {
             display: flex;
             flex-direction: column;
+
+            &_desktop {
+                display: none;
+            }
         }
 
         &__video-box {
@@ -382,6 +440,10 @@
         &__container {
             display: flex;
             flex-direction: column;
+
+            &_desktop {
+                display: none;
+            }
         }
 
         &__column {

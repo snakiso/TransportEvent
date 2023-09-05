@@ -3116,13 +3116,10 @@ a {
   flex-direction: column;
 }
 
-.gallery__column-header {
+.gallery__column-header-inner {
   cursor: pointer;
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.gallery__column-header-inner {
   display: flex;
   flex-direction: column;
 }
@@ -3707,6 +3704,11 @@ a {
   .button {
     padding: 28px 40px;
     font-size: 13px;
+    transition: ease-in 0.2s;
+  }
+
+  .button:hover {
+    opacity: 0.7;
   }
 
   .advantage {
@@ -4785,6 +4787,22 @@ a {
     margin-right: -32px;
   }
 
+  .gallery__container_mobile {
+    display: none;
+  }
+
+  .gallery__container_desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__container-header,
+  .gallery__columns {
+    display: flex;
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
   .gallery__column {
     padding-left: 32px;
     padding-right: 32px;
@@ -4795,12 +4813,21 @@ a {
     margin-bottom: 32px;
   }
 
-  .gallery__column-header:hover {
+  .gallery__column-header_desktop {
+    padding: 0 32px;
+    flex-basis: 33.3%;
+  }
+
+  .gallery__column-header_desktop.active .gallery__column-header-inner {
     background: rgba(255, 255, 255, 0.2);
   }
 
   .gallery__column-header-inner {
     padding: 24px;
+  }
+
+  .gallery__column-header-inner:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .gallery__column-header-title {
@@ -6467,6 +6494,10 @@ a {
     flex-direction: column;
   }
 
+  .gallery__container_desktop {
+    display: none;
+  }
+
   .gallery__column:not(:last-child) {
     margin-bottom: 65px;
   }
@@ -8055,6 +8086,10 @@ a {
     flex-direction: column;
   }
 
+  .gallery__container_desktop {
+    display: none;
+  }
+
   .gallery__video-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -9542,6 +9577,22 @@ a {
     margin-right: -32px;
   }
 
+  .gallery__container_mobile {
+    display: none;
+  }
+
+  .gallery__container_desktop {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery__container-header,
+  .gallery__columns {
+    display: flex;
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+
   .gallery__column {
     padding-left: 32px;
     padding-right: 32px;
@@ -9552,12 +9603,21 @@ a {
     margin-bottom: 32px;
   }
 
-  .gallery__column-header:hover {
+  .gallery__column-header_desktop {
+    padding: 0 32px;
+    flex-basis: 33.3%;
+  }
+
+  .gallery__column-header_desktop.active .gallery__column-header-inner {
     background: rgba(255, 255, 255, 0.2);
   }
 
   .gallery__column-header-inner {
     padding: 24px;
+  }
+
+  .gallery__column-header-inner:hover {
+    background: rgba(255, 255, 255, 0.2);
   }
 
   .gallery__column-header-title {

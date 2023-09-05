@@ -38,6 +38,11 @@
   @include desktop {
     padding: 28px 40px;
     font-size: 13px;
+    transition: ease-in .2s;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   @include small-desktop {
