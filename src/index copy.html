@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+@@include('html/common/head/head.html',{
+"title": "Главная"
+})
+
+<body class="body">
+    <div class="page">
+        @@include('html/common/header/header.html',{})
+        @@include('html/common/menu/menu.html',{})
+        <main class="main">
+            @@include('html/blocks/hero/hero.html',{})
+            @@include('html/blocks/new-banner/news-banner.html',{})
+            @@include('html/blocks/spotlight/spotlight.html',{})
+            @@include('html/blocks/main-event/main-event.html',{})
+            @@include('html/blocks/profile/profile.html',{})
+            @@include('html/blocks/partners/partners.html',{})
+        </main>
+        @@include('html/common/footer/footer.html',{})
+    </div>
+    <script src="./js/header.js"></script>
+    <script src="./js/main-event.js"></script>
+    <script src="./js/partners.js"></script>
+</body>
+
+</html>
