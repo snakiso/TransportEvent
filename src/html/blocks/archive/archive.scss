@@ -1,0 +1,214 @@
+.archive {
+    &__wrapper {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    &__item {
+        position: relative;
+        border-radius: 19px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-image: url(../img/archive/decor.png);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
+
+    &__item-inner {
+        padding: 24px;
+        display: block;
+        color: white;
+    }
+
+    @include desktop {
+        &__wrapper {
+            padding: 200px 40px 160px 40px;
+
+        }
+
+        &__list {
+            margin-top: 80px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        &__item-date {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-year {
+            display: block;
+            font-size: 135px;
+            font-weight: 600;
+            line-height: 74%;
+            letter-spacing: -4.05px;
+            margin-bottom: 50px;
+        }
+
+        &__item-title {
+            margin-bottom: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-place {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.28px;
+            opacity: .8;
+        }
+    }
+
+    @include small-desktop {
+        &__wrapper {
+            padding: 180px 40px 140px 40px;
+        }
+
+        &__list {
+            margin-top: 80px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        &__item-date {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-year {
+            display: block;
+            font-size: 135px;
+            font-weight: 600;
+            line-height: 74%;
+            letter-spacing: -4.05px;
+            margin-bottom: 50px;
+        }
+
+        &__item-title {
+            margin-bottom: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.36px;
+        }
+
+        &__item-place {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.28px;
+            opacity: .8;
+        }
+    }
+
+    @include tablet {
+        &__wrapper {
+            padding: 160px 40px 100px 40px;
+
+        }
+
+        &__list {
+            margin-top: 80px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        &__item-date {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-year {
+            display: block;
+            font-size: 112px;
+            font-weight: 600;
+            line-height: 89%;
+            letter-spacing: -3.36px;
+            margin-bottom: 35px;
+        }
+
+        &__item-title {
+            margin-bottom: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.32px;
+        }
+
+        &__item-place {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.28px;
+            opacity: .8;
+        }
+    }
+
+    @include mobile {
+        &__wrapper {
+            padding: 105px 15px 80px 15px;
+
+        }
+
+        &__list {
+            margin-top: 40px;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 24px;
+        }
+
+        &__item-date {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-year {
+            display: block;
+            font-size: 104px;
+            font-weight: 600;
+            line-height: 96%;
+            letter-spacing: -3.12px;
+            margin-bottom: 35px;
+        }
+
+        &__item-title {
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.28px;
+        }
+
+        &__item-place {
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: -0.26px;
+            opacity: .8;
+        }
+    }
+}

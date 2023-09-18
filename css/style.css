@@ -3495,6 +3495,36 @@ a {
   opacity: 0.5;
 }
 
+.archive__wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.archive__title {
+  text-align: center;
+}
+
+.archive__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.archive__item {
+  position: relative;
+  border-radius: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-image: url(../img/archive/decor.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.archive__item-inner {
+  padding: 24px;
+  display: block;
+  color: white;
+}
+
 @media (min-width: 1440px) {
   .padding-bottom {
     padding-bottom: 160px;
@@ -5105,6 +5135,49 @@ a {
     margin-top: 8px;
     font-size: 18px;
     letter-spacing: -0.36px;
+  }
+
+  .archive__wrapper {
+    padding: 200px 40px 160px 40px;
+  }
+
+  .archive__list {
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .archive__item-date {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+  }
+
+  .archive__item-year {
+    display: block;
+    font-size: 135px;
+    font-weight: 600;
+    line-height: 74%;
+    letter-spacing: -4.05px;
+    margin-bottom: 50px;
+  }
+
+  .archive__item-title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+  }
+
+  .archive__item-place {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    opacity: 0.8;
   }
 }
 
@@ -6823,6 +6896,49 @@ a {
     font-size: 18px;
     letter-spacing: -0.36px;
   }
+
+  .archive__wrapper {
+    padding: 105px 15px 80px 15px;
+  }
+
+  .archive__list {
+    margin-top: 40px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+  }
+
+  .archive__item-date {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+  }
+
+  .archive__item-year {
+    display: block;
+    font-size: 104px;
+    font-weight: 600;
+    line-height: 96%;
+    letter-spacing: -3.12px;
+    margin-bottom: 35px;
+  }
+
+  .archive__item-title {
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+  }
+
+  .archive__item-place {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.26px;
+    opacity: 0.8;
+  }
 }
 
 @media (min-width: 699px) and (max-width: 1200px) {
@@ -8414,6 +8530,49 @@ a {
     font-size: 18px;
     letter-spacing: -0.36px;
   }
+
+  .archive__wrapper {
+    padding: 160px 40px 100px 40px;
+  }
+
+  .archive__list {
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .archive__item-date {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+  }
+
+  .archive__item-year {
+    display: block;
+    font-size: 112px;
+    font-weight: 600;
+    line-height: 89%;
+    letter-spacing: -3.36px;
+    margin-bottom: 35px;
+  }
+
+  .archive__item-title {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+  }
+
+  .archive__item-place {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    opacity: 0.8;
+  }
 }
 
 @media (min-width: 1199px) and (max-width: 1440px) {
@@ -9895,5 +10054,48 @@ a {
     margin-top: 8px;
     font-size: 18px;
     letter-spacing: -0.36px;
+  }
+
+  .archive__wrapper {
+    padding: 180px 40px 140px 40px;
+  }
+
+  .archive__list {
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .archive__item-date {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.32px;
+  }
+
+  .archive__item-year {
+    display: block;
+    font-size: 135px;
+    font-weight: 600;
+    line-height: 74%;
+    letter-spacing: -4.05px;
+    margin-bottom: 50px;
+  }
+
+  .archive__item-title {
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.36px;
+  }
+
+  .archive__item-place {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.28px;
+    opacity: 0.8;
   }
 }
